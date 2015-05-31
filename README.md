@@ -37,7 +37,11 @@ $ php artisan db:seed
 ## Installation
 
 Install Homebrew
+
 Install josegonalez-php
+
 Install php5*
+
 Install Composer
+
 Install Artisan

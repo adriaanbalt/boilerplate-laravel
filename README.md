@@ -41,3 +41,4 @@ $ php artisan db:seed
 * Install php5*
 * Install Composer
 * Install Artisan
+* Setup vhosts in Apache HTTPD.CONF

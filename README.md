@@ -4,9 +4,9 @@ Building Laravel PHP websites using MySQL
 
 ## Setup Database Commands: 
 
-Use SequelPro to remove all tables.
+A helpful GUI database management tool for Apple:  (SequelPro)[http://www.sequelpro.com/]
 
--- OR -- in mySQL
+Alternatively, in mySQL
 
 ```
 SET FOREIGN_KEY_CHECKS = 0;
@@ -16,8 +16,8 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 Then..
 
-```composer dump-autoload```
-
-```php artisan migrate```
-
-```php artisan db:seed```
+```
+$ composer dump-autoload
+$ php artisan migrate
+$ php artisan db:seed
+```

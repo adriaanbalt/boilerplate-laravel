@@ -1,0 +1,14 @@
+.logo {
+	width: 90%;
+	margin: 1em auto;
+	display: block;
+}
+
+
+@media only screen and (min-width: $breakpointTablet){
+
+.logo {
+	width: 50%;
+}
+
+}

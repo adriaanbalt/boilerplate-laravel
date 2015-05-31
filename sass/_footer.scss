@@ -1,0 +1,25 @@
+footer {
+	margin-top: 3em;
+	font-style: italic;
+	text-align: center;
+	p{
+		font-size: 14px;
+	}
+	.logo {
+		width: 150px;
+		margin: 2em auto;
+		display: block;
+	}
+
+	.balt{
+		display: inline-block;
+		padding: 1em 0;
+		font-size: 15px;
+		img {
+			width: 35px;
+		}
+	}
+	.copyright {
+		padding: 2em 0;
+	}
+}

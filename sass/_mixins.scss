@@ -1,0 +1,97 @@
+$vendors: webkit, moz, ms, o;
+
+// Add vendor prefixes to property
+// ==========================================================================
+@mixin vendor-prefix($prop, $value, $prefixValue:false, $remainder:null) {
+	@each $vendor in $vendors {
+		@if $prefixValue == true {
+			-#{$vendor}-#{$prop}: -#{$vendor}-#{$value} $remainder;
+		} @else {
+			-#{$vendor}-#{$prop}: $value $remainder;
+		}
+	}
+	#{$prop}: $value $remainder;
+}
+
+
+// Vertical Linear Graident
+// ==========================================================================
+@mixin vert-linear-gradient($def, $from, $to) {
+	background: $def; /* Old browsers */
+	background: -webkit-linear-gradient(top, #{$from} 0%, #{$to} 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #{$from} 0%, #{$to} 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #{$from} 0%, #{$to} 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #{$from} 0%, #{$to} 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$from}', endColorstr='#{$to}',GradientType=0 ); /* IE6-9 */
+}
+
+// Opacity
+// ==========================================================================
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+
+// @name   triangle($direction, $size, $color)
+// @desc   creates a triangle
+// =========================
+@mixin triangle( $direction : 'down', $size : 10px, $color : #fff ){
+	width: 0; 
+	height: 0; 
+	@if $direction == 'down' {
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-top: $size solid $color;
+	}
+	@if $direction == 'up' {
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-bottom: $size solid $color;
+	}
+	@if $direction == 'left' {
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-right: $size solid $color;
+	}
+	@if $direction == 'right' {
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-left: $size solid $color;
+	}
+}
+
+@mixin animation( $name, $duration, $delay : 0, $iterationCount : infinite, $timeFunc : linear, $direction : alternate, $playState : running) {
+	animation-name: $name;
+	animation-duration: $duration;
+	animation-timing-function: $timeFunc;
+	animation-delay: $delay;
+	animation-iteration-count: $iterationCount;
+	animation-direction: $direction;
+	animation-play-state: $playState;
+	-webkit-animation-name: $name;
+	-webkit-animation-duration: $duration;
+	-webkit-animation-timing-function: $timeFunc;
+	-webkit-animation-delay: $delay;
+	-webkit-animation-iteration-count: $iterationCount;
+	-webkit-animation-direction: $direction;
+	-webkit-animation-play-state: $playState;
+}
+
+@mixin transition( $prop, $duration, $ease, $delay: 0 ) {
+	-webkit-transition: $prop $duration $ease $delay;
+	-moz-transition: $prop $duration $ease $delay;
+	-ms-transition: $prop $duration $ease $delay;
+	-o-transition: $prop $duration $ease $delay;
+	transition: $prop $duration $ease $delay;
+}
+
+@mixin column-width( $width ) {
+	column-width: $width;
+	-webkit-column-width: $width;
+	-moz-column-width: $width;
+	// -webkit-column-gap:   20px;  
+	// -moz-column-gap:      20px;
+	// column-gap:           20px;
+}

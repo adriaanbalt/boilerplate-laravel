@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'iconography';
+    src:url('iconography.eot');
+    src:url('iconography.eot') format('embedded-opentype'),
+        url('iconography.woff') format('woff'),
+        url('iconography.ttf') format('truetype'),
+        url('iconography.svg#iconography') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    font-family: 'iconography';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+.icon-contact {
+    &:before {
+        content: "\e601";
+    }
+}
+.icon-contact-over {
+    &:before {
+        content: "\e600";
+    }
+}
+
+.icon-setdesign {
+    &:before {
+        content: "\e605";
+    }
+}
+.icon-setdesign-over {
+    &:before {
+        content: "\e604";
+    }
+}
+
+.icon-sculpture {
+    &:before {
+        content: "\e603";
+    }
+}
+.icon-sculpture-over {
+    &:before {
+        content: "\e602";
+    }
+}
+
+.icon-logo {
+    &:before {
+        content: "\e607";
+    }
+}
+.icon-logo-over {
+    &:before {
+        content: "\e606";
+    }
+}
+
+.icon-balt {
+    &:before {
+        content: "\e608";
+    }
+}

@@ -1,0 +1,71 @@
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+.shown {
+	display: block;
+	visibility: visible;
+}
+
+.wrapper-large{
+	margin: 0 auto;
+	width: 100%;
+	max-width: $wrapper-large-width;
+}
+
+.wrapper-medium { 
+	margin: 0 auto;
+	width: 100%;
+	max-width: $wrapper-width;
+}
+
+.wrapper-small{
+	margin: 0 auto;
+	width: 100%;
+	max-width: $wrapper-small-width;
+	padding: 2em 0;
+}
+
+.layer {
+	position: absolute;
+	zoom: 1;
+}
+
+.valign {
+	vertical-align: middle;
+	display: inline-block;
+	height: 100%;
+	width: 1px;
+}
+.vcontent {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+object {
+	display: block;
+	margin: 0 auto;
+}
+.section{
+	min-height: 100%;
+}
+section {
+	width: 100%;
+	min-height: 100%;
+	height: 100%;
+	margin-top: 3%;
+}

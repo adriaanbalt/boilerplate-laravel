@@ -1,0 +1,52 @@
+#details {
+	h2 {
+		margin-bottom: 1em;
+	}
+	.information {
+		margin: 1em 0 2em 0;
+		p {
+			margin: 0 .5em;
+			display: inline-block;
+		}
+	}
+	header {
+		margin-top: 2em;
+	}
+	ul {
+		&.hide {
+			@include opacity(0);
+		}
+		&.show {
+			@include opacity(1);
+		}
+		@include transition( opacity, 1s, ease-in-out );
+		li {
+			margin: 0 0 0 10px;
+			float: left;
+			img {
+
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: $breakpointMobile){
+#details{
+	ul {
+//		width: auto !important;
+		li {
+			float: none;
+			margin: 10px;
+			img {
+				//width: 100%;
+			}
+		}
+	}
+	.information {
+		p {
+			margin-bottom: 1em;
+		}
+	}
+}
+}

@@ -1,0 +1,55 @@
+#content{
+	min-height: 100%;
+	position: relative;
+	// width: 100%;
+	text-align: center;
+
+	background: transparent;
+	padding: 0 5%;
+	header {
+		position: relative;
+		width: 100%;
+	}
+}
+.loader-container{
+	position: relative;
+	height: 50px;
+	display: none;
+	&.show {
+		display: block;
+		.loader {
+			@include opacity(1);
+		}
+	}
+	.loader {
+		background: url('../images/icon-ajax-loader.gif');
+		display: block;
+		width:40px;
+		height:40px;
+		position: absolute;
+		z-index: 100;
+		left: 50%;
+		margin-left: -20px;
+		@include opacity(0);
+		@include transition( opacity, .5s, ease-in-out );
+	}
+}
+body {
+	background: url('../images/backgrounds/psychadelic.jpg') repeat;
+}
+// .scroll {
+// 	#details {
+// 		header{
+// 			margin-top: 0;
+// 		}
+// 		ul {
+// 			padding-top: 0;
+// 		}
+// 	}
+// 	#content{
+// 		header {
+// 			position: relative;
+// 		}
+// 	}
+// }
+

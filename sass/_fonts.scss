@@ -1,0 +1,173 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 2878278, 2014-09-05T16:47:17-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed fonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Contax Sans 56 Italic by Type Innovations
+ * URL: http://www.myfonts.com/fonts/typeinnovations/contax-sans/56-italic/
+ * 
+ * Webfont: Contax Sans 55 by Type Innovations
+ * URL: http://www.myfonts.com/fonts/typeinnovations/contax-sans/55-regular/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2878278
+ * Licensed pageviews: 10,000
+ * fonts copyright: Copyright (c) Alex Kaczun, dba Type Innovations, 2011. All rights reserved.
+ * 
+ * © 2014 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+// @import url("//hello.myfonts.net/count/2beb46");
+
+  
+@font-face {font-family: 'ContaxSans56-Italic';src: url('fonts/2BEB46_0_0.eot');src: url('fonts/2BEB46_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/2BEB46_0_0.woff') format('woff'),url('fonts/2BEB46_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ContaxSans55';src: url('fonts/2BEB46_1_0.eot');src: url('fonts/2BEB46_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/2BEB46_1_0.woff') format('woff'),url('fonts/2BEB46_1_0.ttf') format('truetype');}
+ 
+
+body {
+	color: $p-color;
+	font-family: 'ContaxSans55';
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 {
+	font-family: 'ContaxSans55';
+	font-weight: normal;
+	font-size: 96px;
+	text-align: center;
+	color: $h1-color;
+	letter-spacing: 18px;
+}
+
+h2 {
+	font-family: 'ContaxSans55';
+	font-weight: normal;
+	font-size: 25px;
+	letter-spacing: 2px;
+	line-height: 38px;
+	color: $h2-color;
+	font-style: italic;
+}
+
+h3 {
+	font-family: 'ContaxSans55';
+	font-weight: normal;
+	font-weight: normal;
+	text-align: center;
+	color: $h3-color;
+	line-height: 48px;
+	font-size: 36px;
+	letter-spacing: 3px;
+	padding-top: 1.5em;
+	padding-bottom: .5em;
+}
+
+h4 {
+	font-weight: normal;
+	font-size: 72px;
+	letter-spacing: 12px;
+	color: $h4-color;
+	text-align: center;
+}   
+
+h5 {
+	font-weight: normal;
+	font-size: 30px;
+	letter-spacing: 0.041em;
+	line-height: 48px;
+	color: $h5-color;
+}   
+
+h6 {
+	font-weight: normal;
+	text-align: center;
+	font-size: 24px;
+	color: $h6-color;
+	letter-spacing: 5px;
+	span {
+		color: $h6-span-color;
+	}
+}
+
+dt {
+	font-weight: normal;
+	text-align: center;
+	font-size: 72px;
+	color: $dt-color;
+}
+
+dd {
+	font-weight: normal;
+	text-align: center;
+	font-size: 18px;
+	color: $dd-color;
+}
+
+#navigation nav a {
+	color: $nav-color;
+	font-family: abril-fatface, serif;
+	font-weight: normal;
+	&:hover {
+		color: $nav-hover-color;
+	}
+}
+
+#navigation-mobile nav a {
+	letter-spacing: 3px;
+	color: $nav-mobile-color;
+	font-family: abril-fatface, serif;
+	font-weight: normal;
+	letter-spacing: 0.041em;
+	text-align: center;
+	&:hover {
+		color: $nav-hover-color;
+	}
+}
+
+p {
+	color: $p-color;
+	font-weight: normal;
+	font-size: 19px;
+	letter-spacing: 0;
+	line-height: 1.25em;
+}
+
+i {
+	font-family: ContaxSans56-italic;
+	font-weight: normal;
+	font-weight: normal;
+	font-style: italic;
+}
+
+b, strong {
+	font-family: 'ContaxSans55';
+	font-weight: normal;
+	color: #1f1f1f;
+}
+
+a{
+	letter-spacing: 2px;
+	color: $a-color;
+	font-size: 23px;
+	text-decoration: none;
+}
+a:visited {
+}
+
+
+@media only screen and (min-width: $breakpointTablet){
+	h2 {
+		font-size: 40px;
+	}
+}
+
+

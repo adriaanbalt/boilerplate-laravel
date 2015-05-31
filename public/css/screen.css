@@ -1,0 +1,914 @@
+@charset "UTF-8";
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../../sass/_reset.scss */
+small {
+  font-weight: normal;
+  font-size: .75em;
+}
+
+/* line 2, ../../sass/_reset.scss */
+sup {
+  font-weight: normal;
+}
+
+/* line 3, ../../sass/_reset.scss */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * @license
+ * MyFonts Webfont Build ID 2878278, 2014-09-05T16:47:17-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed fonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Contax Sans 56 Italic by Type Innovations
+ * URL: http://www.myfonts.com/fonts/typeinnovations/contax-sans/56-italic/
+ * 
+ * Webfont: Contax Sans 55 by Type Innovations
+ * URL: http://www.myfonts.com/fonts/typeinnovations/contax-sans/55-regular/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2878278
+ * Licensed pageviews: 10,000
+ * fonts copyright: Copyright (c) Alex Kaczun, dba Type Innovations, 2011. All rights reserved.
+ * 
+ * © 2014 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+  font-family: 'ContaxSans56-Italic';
+  src: url("fonts/2BEB46_0_0.eot");
+  src: url("fonts/2BEB46_0_0.eot?#iefix") format("embedded-opentype"), url("fonts/2BEB46_0_0.woff") format("woff"), url("fonts/2BEB46_0_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'ContaxSans55';
+  src: url("fonts/2BEB46_1_0.eot");
+  src: url("fonts/2BEB46_1_0.eot?#iefix") format("embedded-opentype"), url("fonts/2BEB46_1_0.woff") format("woff"), url("fonts/2BEB46_1_0.ttf") format("truetype");
+}
+/* line 35, ../../sass/_fonts.scss */
+body {
+  color: #000;
+  font-family: 'ContaxSans55';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 42, ../../sass/_fonts.scss */
+h1 {
+  font-family: 'ContaxSans55';
+  font-weight: normal;
+  font-size: 96px;
+  text-align: center;
+  color: #FFF;
+  letter-spacing: 18px;
+}
+
+/* line 51, ../../sass/_fonts.scss */
+h2 {
+  font-family: 'ContaxSans55';
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: 2px;
+  line-height: 38px;
+  color: #000;
+  font-style: italic;
+}
+
+/* line 61, ../../sass/_fonts.scss */
+h3 {
+  font-family: 'ContaxSans55';
+  font-weight: normal;
+  font-weight: normal;
+  text-align: center;
+  color: #000;
+  line-height: 48px;
+  font-size: 36px;
+  letter-spacing: 3px;
+  padding-top: 1.5em;
+  padding-bottom: .5em;
+}
+
+/* line 74, ../../sass/_fonts.scss */
+h4 {
+  font-weight: normal;
+  font-size: 72px;
+  letter-spacing: 12px;
+  color: #000;
+  text-align: center;
+}
+
+/* line 82, ../../sass/_fonts.scss */
+h5 {
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 0.041em;
+  line-height: 48px;
+  color: #000;
+}
+
+/* line 90, ../../sass/_fonts.scss */
+h6 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 24px;
+  color: #000;
+  letter-spacing: 5px;
+}
+/* line 96, ../../sass/_fonts.scss */
+h6 span {
+  color: #000;
+}
+
+/* line 101, ../../sass/_fonts.scss */
+dt {
+  font-weight: normal;
+  text-align: center;
+  font-size: 72px;
+  color: #000;
+}
+
+/* line 108, ../../sass/_fonts.scss */
+dd {
+  font-weight: normal;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+}
+
+/* line 115, ../../sass/_fonts.scss */
+#navigation nav a {
+  color: #000;
+  font-family: abril-fatface, serif;
+  font-weight: normal;
+}
+/* line 119, ../../sass/_fonts.scss */
+#navigation nav a:hover {
+  color: #666;
+}
+
+/* line 124, ../../sass/_fonts.scss */
+#navigation-mobile nav a {
+  letter-spacing: 3px;
+  color: #FFF;
+  font-family: abril-fatface, serif;
+  font-weight: normal;
+  letter-spacing: 0.041em;
+  text-align: center;
+}
+/* line 131, ../../sass/_fonts.scss */
+#navigation-mobile nav a:hover {
+  color: #666;
+}
+
+/* line 136, ../../sass/_fonts.scss */
+p {
+  color: #000;
+  font-weight: normal;
+  font-size: 19px;
+  letter-spacing: 0;
+  line-height: 1.25em;
+}
+
+/* line 144, ../../sass/_fonts.scss */
+i {
+  font-family: ContaxSans56-italic;
+  font-weight: normal;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* line 151, ../../sass/_fonts.scss */
+b, strong {
+  font-family: 'ContaxSans55';
+  font-weight: normal;
+  color: #1f1f1f;
+}
+
+/* line 157, ../../sass/_fonts.scss */
+a {
+  letter-spacing: 2px;
+  color: #000;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 168, ../../sass/_fonts.scss */
+  h2 {
+    font-size: 40px;
+  }
+}
+/* line 2, ../../sass/_layout.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 8, ../../sass/_layout.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 11, ../../sass/_layout.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 15, ../../sass/_layout.scss */
+.hidden, #navigation-mobile.closed .container, #navigation-mobile.closed .menu.white, #navigation-mobile.open .menu.black, #navigation-mobile.open .menu.white, #intro.closed {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 19, ../../sass/_layout.scss */
+.shown, #navigation-mobile.closed .menu.black, #navigation-mobile.open .container {
+  display: block;
+  visibility: visible;
+}
+
+/* line 24, ../../sass/_layout.scss */
+.wrapper-large {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024;
+}
+
+/* line 30, ../../sass/_layout.scss */
+.wrapper-medium {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024;
+}
+
+/* line 36, ../../sass/_layout.scss */
+.wrapper-small {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024;
+  padding: 2em 0;
+}
+
+/* line 43, ../../sass/_layout.scss */
+.layer {
+  position: absolute;
+  zoom: 1;
+}
+
+/* line 48, ../../sass/_layout.scss */
+.valign {
+  vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+}
+
+/* line 54, ../../sass/_layout.scss */
+.vcontent {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* line 59, ../../sass/_layout.scss */
+object {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 63, ../../sass/_layout.scss */
+.section {
+  min-height: 100%;
+}
+
+/* line 66, ../../sass/_layout.scss */
+section {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  margin-top: 3%;
+}
+
+/* line 1, ../../sass/_main.scss */
+#content {
+  min-height: 100%;
+  position: relative;
+  text-align: center;
+  background: transparent;
+  padding: 0 5%;
+}
+/* line 9, ../../sass/_main.scss */
+#content header {
+  position: relative;
+  width: 100%;
+}
+
+/* line 14, ../../sass/_main.scss */
+.loader-container {
+  position: relative;
+  height: 50px;
+  display: none;
+}
+/* line 18, ../../sass/_main.scss */
+.loader-container.show {
+  display: block;
+}
+/* line 20, ../../sass/_main.scss */
+.loader-container.show .loader {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* line 24, ../../sass/_main.scss */
+.loader-container .loader {
+  background: url("../images/icon-ajax-loader.gif");
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  margin-left: -20px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.5s ease-in-out 0;
+  -moz-transition: opacity 0.5s ease-in-out 0;
+  -ms-transition: opacity 0.5s ease-in-out 0;
+  -o-transition: opacity 0.5s ease-in-out 0;
+  transition: opacity 0.5s ease-in-out 0;
+}
+
+/* line 37, ../../sass/_main.scss */
+body {
+  background: url("../images/backgrounds/psychadelic.jpg") repeat;
+}
+
+@font-face {
+  font-family: 'iconography';
+  src: url("iconography.eot");
+  src: url("iconography.eot") format("embedded-opentype"), url("iconography.woff") format("woff"), url("iconography.ttf") format("truetype"), url("iconography.svg#iconography") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 12, ../../sass/_icons.scss */
+.icon {
+  font-family: 'iconography';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 22, ../../sass/_icons.scss */
+.icon:hover {
+  text-decoration: none;
+}
+
+/* line 29, ../../sass/_icons.scss */
+.icon-contact:before {
+  content: "\e601";
+}
+
+/* line 34, ../../sass/_icons.scss */
+.icon-contact-over:before {
+  content: "\e600";
+}
+
+/* line 40, ../../sass/_icons.scss */
+.icon-setdesign:before {
+  content: "\e605";
+}
+
+/* line 45, ../../sass/_icons.scss */
+.icon-setdesign-over:before {
+  content: "\e604";
+}
+
+/* line 51, ../../sass/_icons.scss */
+.icon-sculpture:before {
+  content: "\e603";
+}
+
+/* line 56, ../../sass/_icons.scss */
+.icon-sculpture-over:before {
+  content: "\e602";
+}
+
+/* line 62, ../../sass/_icons.scss */
+.icon-logo:before {
+  content: "\e607";
+}
+
+/* line 67, ../../sass/_icons.scss */
+.icon-logo-over:before {
+  content: "\e606";
+}
+
+/* line 73, ../../sass/_icons.scss */
+.icon-balt:before {
+  content: "\e608";
+}
+
+/* line 2, ../../sass/_navigation.scss */
+#navigation nav {
+  width: 100%;
+  margin: 1em auto 2em 0;
+}
+/* line 5, ../../sass/_navigation.scss */
+#navigation nav a {
+  letter-spacing: 0.041em;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 2.5em;
+  padding: .5em .75em;
+  display: inline-block;
+  position: relative;
+}
+/* line 13, ../../sass/_navigation.scss */
+#navigation nav a img {
+  width: 200px;
+}
+/* line 20, ../../sass/_navigation.scss */
+#navigation nav a .over {
+  display: none;
+  position: absolute;
+  top: 20px;
+}
+/* line 26, ../../sass/_navigation.scss */
+#navigation nav a:hover .over {
+  display: block;
+}
+/* line 31, ../../sass/_navigation.scss */
+#navigation nav .sculpture {
+  display: none;
+}
+
+/* line 37, ../../sass/_navigation.scss */
+#navigation-mobile {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: none;
+}
+/* line 43, ../../sass/_navigation.scss */
+#navigation-mobile .container {
+  background-size: cover;
+  background-position: top left;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 51, ../../sass/_navigation.scss */
+#navigation-mobile .container nav {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+/* line 56, ../../sass/_navigation.scss */
+#navigation-mobile .container nav a {
+  font-size: 34px;
+  display: block;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  height: 20%;
+}
+/* line 57, ../../sass/_navigation.scss */
+#navigation-mobile .container nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+/* line 70, ../../sass/_navigation.scss */
+#navigation-mobile .menu {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  padding: 1em;
+  z-index: 100;
+}
+/* line 76, ../../sass/_navigation.scss */
+#navigation-mobile .menu.white {
+  display: none;
+  background: transparent url(../images/menu-white.svg) 50% 50% no-repeat;
+  width: 50px;
+  height: 30px;
+}
+/* line 82, ../../sass/_navigation.scss */
+#navigation-mobile .menu.black {
+  background: #fff url(../images/menu-black.svg) 50% 50% no-repeat;
+  display: block;
+  width: 22px;
+  height: 11px;
+  border-radius: 5px;
+}
+/* line 92, ../../sass/_navigation.scss */
+#navigation-mobile.closed .container {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/* line 103, ../../sass/_navigation.scss */
+#navigation-mobile.open {
+  width: 100%;
+  min-height: 100%;
+}
+/* line 112, ../../sass/_navigation.scss */
+#navigation-mobile.open .container {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+@media screen and (max-width: 640px) {
+  /* line 124, ../../sass/_navigation.scss */
+  #navigation nav a {
+    font-size: 1.5em;
+  }
+  /* line 126, ../../sass/_navigation.scss */
+  #navigation nav a .over {
+    top: 12px;
+  }
+}
+/* line 1, ../../sass/_logo.scss */
+.logo {
+  width: 90%;
+  margin: 1em auto;
+  display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 10, ../../sass/_logo.scss */
+  .logo {
+    width: 50%;
+  }
+}
+/* line 1, ../../sass/_intro.scss */
+#intro {
+  background-image: url(../images/records/record.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: #010203;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  position: fixed;
+  z-index: 100;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1000;
+  -webkit-transition: opacity 0.2s ease-in 0;
+  -moz-transition: opacity 0.2s ease-in 0;
+  -ms-transition: opacity 0.2s ease-in 0;
+  -o-transition: opacity 0.2s ease-in 0;
+  transition: opacity 0.2s ease-in 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* line 17, ../../sass/_intro.scss */
+#intro.hide {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/* line 20, ../../sass/_intro.scss */
+#intro .logo-pink {
+  width: 90%;
+  max-width: 800px;
+}
+/* line 27, ../../sass/_intro.scss */
+#intro p {
+  color: #fff;
+}
+
+/* line 2, ../../sass/_listing.scss */
+#listing {
+  padding: 0 0 5em 0;
+}
+/* line 4, ../../sass/_listing.scss */
+#listing ul {
+  padding: .15em;
+}
+/* line 7, ../../sass/_listing.scss */
+#listing ul li {
+  margin: 8px;
+}
+/* line 11, ../../sass/_listing.scss */
+#listing ul li a {
+  position: relative;
+  display: block;
+  margin: 2px;
+  -webkit-transition: all 0.2s ease-in 0;
+  -moz-transition: all 0.2s ease-in 0;
+  -ms-transition: all 0.2s ease-in 0;
+  -o-transition: all 0.2s ease-in 0;
+  transition: all 0.2s ease-in 0;
+}
+/* line 17, ../../sass/_listing.scss */
+#listing ul li a:hover img {
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+  -webkit-filter: brightness(1.3);
+}
+/* line 44, ../../sass/_listing.scss */
+#listing ul li a:hover .vcontent {
+  display: none;
+  visibility: hidden;
+}
+/* line 49, ../../sass/_listing.scss */
+#listing ul li a img {
+  -webkit-transition: all 200 none 0;
+  -moz-transition: all 200 none 0;
+  -ms-transition: all 200 none 0;
+  -o-transition: all 200 none 0;
+  transition: all 200 none 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 1s ease-in-out 0;
+  -moz-transition: opacity 1s ease-in-out 0;
+  -ms-transition: opacity 1s ease-in-out 0;
+  -o-transition: opacity 1s ease-in-out 0;
+  transition: opacity 1s ease-in-out 0;
+  width: 100%;
+  z-index: 0;
+  top: 0;
+}
+/* line 52, ../../sass/_listing.scss */
+#listing ul li a img.hide {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/* line 55, ../../sass/_listing.scss */
+#listing ul li a img.loaded {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* line 65, ../../sass/_listing.scss */
+#listing ul li a .valign {
+  height: 100%;
+  display: none;
+}
+/* line 69, ../../sass/_listing.scss */
+#listing ul li a .vcontent {
+  color: #FFF;
+  font-weight: bold;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: absolute;
+  z-index: 1;
+  bottom: 6px;
+  left: 0;
+  width: 100%;
+}
+/* line 81, ../../sass/_listing.scss */
+#listing ul li a:hover .vcontent {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* Also, don't forget to add this: */
+/* line 94, ../../sass/_listing.scss */
+[data-columns]::before {
+  position: absolute;
+  right: 9999em;
+  bottom: 9999em;
+  visibility: hidden;
+}
+
+/* Again, you’re free to use and define the classes: */
+/* line 102, ../../sass/_listing.scss */
+.column {
+  float: left;
+}
+
+/* line 103, ../../sass/_listing.scss */
+.size-1of1 {
+  width: 100%;
+}
+
+/* line 104, ../../sass/_listing.scss */
+.size-1of2 {
+  width: 50%;
+}
+
+/* line 105, ../../sass/_listing.scss */
+.size-1of3 {
+  width: 33.333%;
+}
+
+/* line 106, ../../sass/_listing.scss */
+.size-1of4 {
+  width: 25%;
+}
+
+/* line 107, ../../sass/_listing.scss */
+.size-1of5 {
+  width: 20%;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 110, ../../sass/_listing.scss */
+  #grid[data-columns]::before {
+    content: '1 .column.size-1of1';
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* line 115, ../../sass/_listing.scss */
+  #grid[data-columns]::before {
+    content: '2 .column.size-1of2';
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 121, ../../sass/_listing.scss */
+  #grid[data-columns]::before {
+    content: '3 .column.size-1of3';
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 127, ../../sass/_listing.scss */
+  #grid[data-columns]::before {
+    content: '4 .column.size-1of4';
+  }
+}
+/* line 2, ../../sass/_details.scss */
+#details h2 {
+  margin-bottom: 1em;
+}
+/* line 5, ../../sass/_details.scss */
+#details .information {
+  margin: 1em 0 2em 0;
+}
+/* line 7, ../../sass/_details.scss */
+#details .information p {
+  margin: 0 .5em;
+  display: inline-block;
+}
+/* line 12, ../../sass/_details.scss */
+#details header {
+  margin-top: 2em;
+}
+/* line 15, ../../sass/_details.scss */
+#details ul {
+  -webkit-transition: opacity 1s ease-in-out 0;
+  -moz-transition: opacity 1s ease-in-out 0;
+  -ms-transition: opacity 1s ease-in-out 0;
+  -o-transition: opacity 1s ease-in-out 0;
+  transition: opacity 1s ease-in-out 0;
+}
+/* line 16, ../../sass/_details.scss */
+#details ul.hide {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/* line 19, ../../sass/_details.scss */
+#details ul.show {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* line 23, ../../sass/_details.scss */
+#details ul li {
+  margin: 0 0 0 10px;
+  float: left;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 38, ../../sass/_details.scss */
+  #details ul li {
+    float: none;
+    margin: 10px;
+  }
+  /* line 47, ../../sass/_details.scss */
+  #details .information p {
+    margin-bottom: 1em;
+  }
+}
+/* line 1, ../../sass/_about.scss */
+#about {
+  margin: 3em;
+}
+/* line 4, ../../sass/_about.scss */
+#about p {
+  font-style: italic;
+  margin: 1.5em 0 0 0;
+}
+
+/* line 1, ../../sass/_contact.scss */
+#contact {
+  margin: 9em 0;
+}
+/* line 3, ../../sass/_contact.scss */
+#contact div {
+  margin: 1em 0;
+}
+
+/* line 1, ../../sass/_definition.scss */
+#definition {
+  font-style: italic;
+  text-align: center;
+  margin: 2em 0 0 0;
+}
+/* line 5, ../../sass/_definition.scss */
+#definition p {
+  font-size: 16px;
+}
+
+/* line 1, ../../sass/_footer.scss */
+footer {
+  margin-top: 3em;
+  font-style: italic;
+  text-align: center;
+}
+/* line 5, ../../sass/_footer.scss */
+footer p {
+  font-size: 14px;
+}
+/* line 8, ../../sass/_footer.scss */
+footer .logo {
+  width: 150px;
+  margin: 2em auto;
+  display: block;
+}
+/* line 14, ../../sass/_footer.scss */
+footer .balt {
+  display: inline-block;
+  padding: 1em 0;
+  font-size: 15px;
+}
+/* line 18, ../../sass/_footer.scss */
+footer .balt img {
+  width: 35px;
+}
+/* line 22, ../../sass/_footer.scss */
+footer .copyright {
+  padding: 2em 0;
+}
